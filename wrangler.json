@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "indieorch-dev",
+  "compatibility_date": "2026-11-21",
+  "assets": {
+    "directory": "./dist"
+  }
+}

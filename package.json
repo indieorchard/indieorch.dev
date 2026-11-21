@@ -1,5 +1,5 @@
 {
-  "name": "indieorch.dev",
+  "name": "indieorch-dev",
   "version": "1.0.0",
   "type": "module",
   "description": "IndieOrch — Independent software. Privacy by design.",
@@ -26,5 +26,8 @@
     "@tailwindcss/vite": "^4.3.5",
     "astro": "^7.4.13",
     "tailwindcss": "^4.3.5"
+  },
+  "devDependencies": {
+    "wrangler": "^4.166.0"
   }
 }
