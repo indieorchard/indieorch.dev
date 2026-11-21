@@ -1,46 +1,42 @@
 ---
 ---
 
-<header class="w-full border-b border-border/80 sticky top-0 bg-canvas/90 backdrop-blur-sm z-50">
-  <div class="max-w-content mx-auto px-6 sm:px-8 h-16 flex items-center justify-between">
-    <!-- Brand Wordmark & Logo -->
-    <a href="/" class="flex items-center gap-2.5 group transition-opacity hover:opacity-85">
+<header class="w-full border-b border-border sticky top-0 bg-canvas/95 backdrop-blur-sm z-50">
+  <div class="max-w-content mx-auto px-5 sm:px-8 h-14 sm:h-16 flex items-center justify-between">
+    <!-- Brand -->
+    <a href="/" class="flex items-center gap-2.5 transition-opacity hover:opacity-80">
       <img
         src="/indieorch-symbol.png"
-        alt="IndieOrchard logo mark"
+        alt="IndieOrch logo"
         class="w-7 h-7 object-contain"
         width="28"
         height="28"
       />
-      <span class="font-semibold text-[15px] tracking-tight text-ink">IndieOrch</span>
+      <span class="font-bold text-[15px] tracking-tight text-ink">IndieOrch</span>
     </a>
 
-    <!-- Navigation links -->
-    <nav class="flex items-center gap-6 sm:gap-8 text-[14px]">
-      <a
-        href="/#products"
-        class="text-ink-muted hover:text-ink transition-colors font-medium hidden sm:inline-block"
-      >
-        Products
-      </a>
-      <a
-        href="/#philosophy"
-        class="text-ink-muted hover:text-ink transition-colors font-medium hidden sm:inline-block"
-      >
-        Philosophy
-      </a>
-      <a
-        href="/#about"
-        class="text-ink-muted hover:text-ink transition-colors font-medium hidden sm:inline-block"
-      >
-        About
-      </a>
+    <!-- Desktop Nav -->
+    <nav class="hidden sm:flex items-center gap-7 text-[13px] font-medium">
+      <a href="/#products" class="text-ink-muted hover:text-ink transition-colors">Products</a>
+      <a href="/#philosophy" class="text-ink-muted hover:text-ink transition-colors">Philosophy</a>
+      <a href="/#about" class="text-ink-muted hover:text-ink transition-colors">About</a>
       <a
         href="/contact"
-        class="inline-flex items-center justify-center px-3.5 py-1.5 text-[13px] font-medium tracking-tight text-ink border border-border rounded-md hover:bg-surface-subtle transition-all"
+        class="inline-flex items-center justify-center px-3.5 py-1.5 text-[13px] font-semibold text-ink border border-border rounded-lg hover:bg-surface-subtle transition-all"
       >
         Contact
       </a>
     </nav>
+
+    <!-- Mobile Nav: just Contact button -->
+    <div class="flex sm:hidden items-center gap-3">
+      <a href="/#products" class="text-[13px] font-medium text-ink-muted hover:text-ink transition-colors">Products</a>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-3 py-1.5 text-[12px] font-semibold text-ink border border-border rounded-lg hover:bg-surface-subtle transition-all"
+      >
+        Contact
+      </a>
+    </div>
   </div>
 </header>

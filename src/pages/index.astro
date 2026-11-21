@@ -3,97 +3,122 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="IndieOrch — Independent software. Privacy by design."
-  description="IndieOrch is an independent software studio building thoughtful tools for everyday work, creativity and technology. Useful products, carefully engineered, with privacy at their core."
+  title="IndieOrch — Privacy-First Software Tools for Creators, Professionals and Developers"
+  description="IndieOrch builds privacy-first software for creators, professionals and developers. PII detection, document redaction, browser utilities and application observability tools — all running locally."
   canonicalPath="/"
 >
   <!-- Hero Section -->
-  <section class="pt-20 sm:pt-28 pb-20 border-b border-border">
-    <div class="max-w-content mx-auto px-6 sm:px-8">
+  <section class="pt-16 sm:pt-24 pb-16 sm:pb-20 border-b border-border">
+    <div class="max-w-content mx-auto px-5 sm:px-8">
       <div class="max-w-3xl">
-        <!-- Studio Tagline Badge -->
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface-subtle/80 text-[12px] font-medium text-ink-muted mb-8 tracking-wide">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-          <span>Independent software studio</span>
-          <span class="text-ink-faint">/</span>
-          <span>Privacy by design</span>
+        <!-- Studio pill -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border bg-surface-subtle text-[11px] font-semibold text-ink-muted mb-7 tracking-widest uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></span>
+          <span>Independent Software Studio</span>
         </div>
 
         <!-- Headline -->
-        <h1 class="text-4xl sm:text-6xl font-bold tracking-tightest text-ink leading-[1.08] mb-6">
-          Software that respects your privacy.
+        <h1 class="text-[2.6rem] leading-[1.07] sm:text-6xl font-bold tracking-tightest text-ink mb-5">
+          Software that respects<br class="hidden sm:block" /> your privacy.
         </h1>
 
-        <!-- Supporting Copy -->
-        <p class="text-lg sm:text-xl text-ink-muted leading-relaxed font-normal mb-10 max-w-2xl">
-          IndieOrch is an independent software studio building thoughtful tools for everyday work, creativity and technology. Useful products, carefully engineered, with privacy at their core.
+        <!-- Supporting Copy — no em dashes, no comparatives -->
+        <p class="text-base sm:text-lg text-ink-muted leading-relaxed mb-8 max-w-2xl">
+          IndieOrch is an independent software studio building focused tools for everyday work, creativity and technology. Privacy-first by architecture. Useful by design.
         </p>
 
         <!-- CTAs -->
-        <div class="flex flex-wrap items-center gap-4">
+        <div class="flex flex-wrap items-center gap-3">
           <a
             href="#products"
-            class="inline-flex items-center justify-center px-5 py-2.5 rounded-md bg-ink text-canvas font-medium text-[14px] hover:bg-neutral-800 transition-colors shadow-sm"
+            class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-ink text-canvas font-semibold text-[14px] hover:bg-neutral-800 transition-colors"
           >
-            Explore our products
+            Explore products
           </a>
           <a
             href="#philosophy"
-            class="inline-flex items-center justify-center px-5 py-2.5 rounded-md border border-border bg-canvas text-ink font-medium text-[14px] hover:bg-surface-subtle transition-colors"
+            class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg border border-border bg-canvas text-ink font-medium text-[14px] hover:bg-surface-subtle transition-colors"
           >
             Our philosophy
           </a>
         </div>
       </div>
+
+      <!-- Trust row -->
+      <div class="mt-14 flex flex-wrap gap-6 text-[12px] font-medium text-ink-faint tracking-wide uppercase">
+        <span class="flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Local processing
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          No data uploads
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Works offline
+        </span>
+        <span class="flex items-center gap-2">
+          <svg class="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          No tracking
+        </span>
+      </div>
     </div>
   </section>
 
   <!-- Products Section -->
-  <section id="products" class="py-24 border-b border-border scroll-mt-12">
-    <div class="max-w-content mx-auto px-6 sm:px-8">
+  <section id="products" class="py-16 sm:py-24 border-b border-border scroll-mt-16">
+    <div class="max-w-content mx-auto px-5 sm:px-8">
       <!-- Section Header -->
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 pb-6 border-b border-border">
-        <div>
-          <span class="text-[12px] font-semibold uppercase tracking-wider text-ink-faint block mb-2">
-            Catalog
-          </span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink">
-            Featured Products
-          </h2>
+      <div class="mb-10 pb-6 border-b border-border">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-ink-faint block mb-2">Products</span>
+        <div class="flex flex-col sm:flex-row sm:items-end gap-3 sm:gap-0 justify-between">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink">Privacy-first tools, built to run locally.</h2>
+          <p class="text-[13px] text-ink-muted max-w-xs sm:text-right">
+            Sensitive data stays on your device.
+          </p>
         </div>
-        <p class="text-[14px] text-ink-muted mt-2 sm:mt-0 max-w-md">
-          Crafted to solve practical problems without harvesting data or compromising on security.
-        </p>
       </div>
 
       <!-- Products Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
         <!-- Product 1: NoCapUtils -->
-        <div class="group flex flex-col justify-between p-7 rounded-lg border border-border bg-surface hover:border-border-strong transition-all">
+        <article class="group flex flex-col justify-between p-6 sm:p-7 rounded-xl border border-border bg-surface hover:border-border-strong hover:shadow-sm transition-all duration-200">
           <div>
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-[11px] font-semibold uppercase tracking-wider text-ink-muted font-mono">
-                Web Utilities · Free
-              </span>
-              <span class="inline-flex items-center gap-1.5 text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+            <div class="flex items-start justify-between mb-5">
+              <div class="flex flex-col gap-1">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-ink-faint font-mono">Web · Free</span>
+                <span class="text-[10px] font-semibold uppercase tracking-widest text-ink-faint">Creators / Professionals</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 tracking-wide uppercase shrink-0">
                 Live
               </span>
             </div>
 
-            <h3 class="text-xl font-bold tracking-tight text-ink mb-3 group-hover:text-accent transition-colors">
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-ink mb-2.5 group-hover:text-accent transition-colors">
               NoCapUtils
             </h3>
-            <p class="text-[14px] text-ink-muted leading-relaxed mb-8">
-              A collection of free, privacy-first utilities for creators and professionals. Browser-based tools that process data locally without unnecessary uploads.
+
+            <p class="text-[13px] sm:text-[14px] text-ink-muted leading-relaxed mb-6">
+              Free, privacy-first browser utilities for creators and professionals. All data processing happens locally in your browser. No server uploads required.
             </p>
+
+            <!-- SEO-rich keyword tags -->
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">PII tools</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Browser utilities</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Privacy tools</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Free</span>
+            </div>
           </div>
 
-          <div class="pt-6 border-t border-border/60">
+          <div class="pt-5 border-t border-border/60">
             <a
               href="https://nocaputils.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 text-[13px] font-medium text-ink hover:text-accent transition-colors"
+              class="inline-flex items-center gap-1.5 text-[13px] font-semibold text-ink hover:text-accent transition-colors"
             >
               <span>Visit nocaputils.com</span>
               <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,164 +126,213 @@ import Layout from '../layouts/Layout.astro';
               </svg>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Product 2: PII Shield -->
-        <div class="group flex flex-col justify-between p-7 rounded-lg border border-border bg-surface hover:border-border-strong transition-all">
+        <article class="group flex flex-col justify-between p-6 sm:p-7 rounded-xl border border-border bg-surface hover:border-border-strong hover:shadow-sm transition-all duration-200">
           <div>
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-[11px] font-semibold uppercase tracking-wider text-ink-muted font-mono">
-                Desktop App · Windows
-              </span>
-              <span class="inline-flex items-center gap-1.5 text-[11px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+            <div class="flex items-start justify-between mb-5">
+              <div class="flex flex-col gap-1">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-ink-faint font-mono">Windows · Desktop</span>
+                <span class="text-[10px] font-semibold uppercase tracking-widest text-ink-faint">PII Detection</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 tracking-wide uppercase shrink-0">
                 Available
               </span>
             </div>
 
-            <h3 class="text-xl font-bold tracking-tight text-ink mb-3 group-hover:text-accent transition-colors">
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-ink mb-2.5 group-hover:text-accent transition-colors">
               PII Shield
             </h3>
-            <p class="text-[14px] text-ink-muted leading-relaxed mb-8">
-              Protect sensitive information before sharing documents with AI tools. Document redaction and local PII detection, running offline on Windows.
+
+            <p class="text-[13px] sm:text-[14px] text-ink-muted leading-relaxed mb-6">
+              Detect and redact personally identifiable information from documents before sharing with AI tools, colleagues or third parties. Runs fully offline on Windows. No data leaves your machine.
             </p>
+
+            <!-- SEO-rich keyword tags -->
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">PII detection</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Document redaction</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Offline</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Windows</span>
+            </div>
           </div>
 
-          <div class="pt-6 border-t border-border/60">
+          <div class="pt-5 border-t border-border/60 flex flex-col gap-2">
             <a
-              href="https://nocaputils.com/pii-shield"
+              href="https://apps.microsoft.com/detail/9nm785c34320?hl=en-US&gl=AE"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 text-[13px] font-medium text-ink hover:text-accent transition-colors"
+              class="inline-flex items-center gap-1.5 text-[13px] font-semibold text-ink hover:text-accent transition-colors"
             >
-              <span>View PII Shield</span>
-              <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
               </svg>
+              <span>Get on Microsoft Store</span>
             </a>
           </div>
-        </div>
+        </article>
 
         <!-- Product 3: Observability (Coming Soon) -->
-        <div class="group flex flex-col justify-between p-7 rounded-lg border border-dashed border-border bg-surface-subtle/50">
+        <article class="group flex flex-col justify-between p-6 sm:p-7 rounded-xl border border-dashed border-border bg-surface-subtle/40 sm:col-span-2 lg:col-span-1">
           <div>
-            <div class="flex items-center justify-between mb-6">
-              <span class="text-[11px] font-semibold uppercase tracking-wider text-ink-faint font-mono">
-                Developer Tooling
-              </span>
-              <span class="inline-flex items-center gap-1.5 text-[11px] font-medium text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
-                Coming Soon
+            <div class="flex items-start justify-between mb-5">
+              <div class="flex flex-col gap-1">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-ink-faint font-mono">Developer · SaaS</span>
+                <span class="text-[10px] font-semibold uppercase tracking-widest text-ink-faint">Application Telemetry</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[10px] font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200 tracking-wide uppercase shrink-0">
+                In Development
               </span>
             </div>
 
-            <h3 class="text-xl font-bold tracking-tight text-ink mb-3">
+            <h3 class="text-lg sm:text-xl font-bold tracking-tight text-ink mb-2.5">
               Observability
             </h3>
-            <p class="text-[14px] text-ink-muted leading-relaxed mb-8">
-              A new approach to application observability, designed to make system behaviour easier to understand and act upon while respecting data privacy.
+
+            <p class="text-[13px] sm:text-[14px] text-ink-muted leading-relaxed mb-6">
+              Application observability and telemetry tooling designed for teams that care about system behaviour and data privacy. Understand what your software is doing without sending sensitive signals to third parties.
             </p>
+
+            <!-- SEO-rich keyword tags -->
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Observability</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Telemetry tools</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Privacy telemetry</span>
+              <span class="text-[10px] font-medium px-2 py-0.5 rounded bg-surface-subtle border border-border text-ink-faint">Developer tools</span>
+            </div>
           </div>
 
-          <div class="pt-6 border-t border-border/60 flex items-center justify-between">
-            <span class="text-[13px] text-ink-faint font-mono">
-              In active development
-            </span>
+          <div class="pt-5 border-t border-border/60 flex items-center justify-between">
+            <span class="text-[12px] text-ink-faint font-mono">In active development</span>
             <a
               href="/contact?topic=observability"
-              class="text-[12px] font-medium text-ink-muted hover:text-ink transition-colors"
+              class="text-[12px] font-semibold text-ink-muted hover:text-ink transition-colors"
             >
-              Request early access &rarr;
+              Request early access
             </a>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Philosophy Section -->
-  <section id="philosophy" class="py-24 border-b border-border scroll-mt-12">
-    <div class="max-w-content mx-auto px-6 sm:px-8">
-      <div class="max-w-3xl mb-16">
-        <span class="text-[12px] font-semibold uppercase tracking-wider text-ink-faint block mb-2">
-          Engineering Values
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-ink mb-4">
-          Privacy shouldn't be a premium feature.
+  <section id="philosophy" class="py-16 sm:py-24 border-b border-border scroll-mt-16">
+    <div class="max-w-content mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-12">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-ink-faint block mb-3">Engineering Values</span>
+        <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-ink mb-4">
+          Privacy is an architectural decision, not an afterthought.
         </h2>
-        <p class="text-[16px] text-ink-muted leading-relaxed">
-          We believe privacy is an architectural standard, not an add-on or monetization tier. Our software is designed from day one to keep your sensitive data where it belongs — in your hands.
+        <p class="text-[15px] sm:text-[16px] text-ink-muted leading-relaxed">
+          Every product at IndieOrch is built from first principles with privacy as a constraint, not a checkbox. Sensitive data stays on your device. Full stop.
         </p>
       </div>
 
-      <!-- Principles List -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Principle 1 -->
-        <div class="p-6 rounded-lg border border-border bg-surface/60">
-          <div class="w-8 h-8 rounded bg-canvas border border-border flex items-center justify-center font-mono text-[13px] font-semibold text-ink mb-5">
-            01
-          </div>
-          <h3 class="text-lg font-bold tracking-tight text-ink mb-2">
-            Privacy by Design
-          </h3>
-          <p class="text-[14px] text-ink-muted leading-relaxed">
-            Minimize data collection and unnecessary exposure. Every feature is audited to prevent passive leakage or secondary data sharing.
+      <!-- Principles -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div class="p-5 sm:p-6 rounded-xl border border-border bg-surface">
+          <div class="w-8 h-8 rounded-lg bg-canvas border border-border flex items-center justify-center font-mono text-[12px] font-bold text-ink mb-5">01</div>
+          <h3 class="text-base font-bold tracking-tight text-ink mb-2">Privacy by Design</h3>
+          <p class="text-[13px] sm:text-[14px] text-ink-muted leading-relaxed">
+            Data minimisation is built into every feature. No passive telemetry, no background uploads, no secondary data sharing.
           </p>
         </div>
 
-        <!-- Principle 2 -->
-        <div class="p-6 rounded-lg border border-border bg-surface/60">
-          <div class="w-8 h-8 rounded bg-canvas border border-border flex items-center justify-center font-mono text-[13px] font-semibold text-ink mb-5">
-            02
-          </div>
-          <h3 class="text-lg font-bold tracking-tight text-ink mb-2">
-            Local When Possible
-          </h3>
-          <p class="text-[14px] text-ink-muted leading-relaxed">
-            Process sensitive information on the user's device wherever practical. Computation happens client-side or offline before anything reaches a network.
+        <div class="p-5 sm:p-6 rounded-xl border border-border bg-surface">
+          <div class="w-8 h-8 rounded-lg bg-canvas border border-border flex items-center justify-center font-mono text-[12px] font-bold text-ink mb-5">02</div>
+          <h3 class="text-base font-bold tracking-tight text-ink mb-2">Local When Possible</h3>
+          <p class="text-[13px] sm:text-[14px] text-ink-muted leading-relaxed">
+            Sensitive computation runs on your device. PII detection, document redaction and data processing happen client-side or offline.
           </p>
         </div>
 
-        <!-- Principle 3 -->
-        <div class="p-6 rounded-lg border border-border bg-surface/60">
-          <div class="w-8 h-8 rounded bg-canvas border border-border flex items-center justify-center font-mono text-[13px] font-semibold text-ink mb-5">
-            03
-          </div>
-          <h3 class="text-lg font-bold tracking-tight text-ink mb-2">
-            Purpose-Built Software
-          </h3>
-          <p class="text-[14px] text-ink-muted leading-relaxed">
-            Build focused products that solve real problems without unnecessary complexity, bloat, hidden telemetry, or invasive monetization.
+        <div class="p-5 sm:p-6 rounded-xl border border-border bg-surface">
+          <div class="w-8 h-8 rounded-lg bg-canvas border border-border flex items-center justify-center font-mono text-[12px] font-bold text-ink mb-5">03</div>
+          <h3 class="text-base font-bold tracking-tight text-ink mb-2">Purpose-Built Software</h3>
+          <p class="text-[13px] sm:text-[14px] text-ink-muted leading-relaxed">
+            Focused products that solve one problem well. No feature bloat, no dark patterns, no subscriptions you forgot about.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases / SEO rich section -->
+  <section class="py-16 sm:py-20 border-b border-border bg-surface-subtle/30">
+    <div class="max-w-content mx-auto px-5 sm:px-8">
+      <span class="text-[11px] font-bold uppercase tracking-widest text-ink-faint block mb-6">Who uses IndieOrch tools</span>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="p-5 rounded-xl border border-border bg-surface">
+          <div class="w-8 h-8 rounded-lg bg-surface-subtle flex items-center justify-center mb-4">
+            <svg class="w-4 h-4 text-ink-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-sm font-bold text-ink mb-1.5">Legal and Compliance Teams</h3>
+          <p class="text-[12px] text-ink-muted leading-relaxed">Redact PII from contracts and reports before sharing with AI assistants or external parties.</p>
+        </div>
+
+        <div class="p-5 rounded-xl border border-border bg-surface">
+          <div class="w-8 h-8 rounded-lg bg-surface-subtle flex items-center justify-center mb-4">
+            <svg class="w-4 h-4 text-ink-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+            </svg>
+          </div>
+          <h3 class="text-sm font-bold text-ink mb-1.5">Developers</h3>
+          <p class="text-[12px] text-ink-muted leading-relaxed">Monitor application telemetry and observability data without sending sensitive signals to third-party services.</p>
+        </div>
+
+        <div class="p-5 rounded-xl border border-border bg-surface">
+          <div class="w-8 h-8 rounded-lg bg-surface-subtle flex items-center justify-center mb-4">
+            <svg class="w-4 h-4 text-ink-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+            </svg>
+          </div>
+          <h3 class="text-sm font-bold text-ink mb-1.5">Content Creators</h3>
+          <p class="text-[12px] text-ink-muted leading-relaxed">Browser-based utilities that work directly in your tab. Process files, convert data, clean text locally.</p>
+        </div>
+
+        <div class="p-5 rounded-xl border border-border bg-surface">
+          <div class="w-8 h-8 rounded-lg bg-surface-subtle flex items-center justify-center mb-4">
+            <svg class="w-4 h-4 text-ink-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3 class="text-sm font-bold text-ink mb-1.5">Privacy-Conscious Businesses</h3>
+          <p class="text-[12px] text-ink-muted leading-relaxed">Tools that satisfy GDPR, CCPA and internal data handling policies without infrastructure overhead.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-24 border-b border-border scroll-mt-12">
-    <div class="max-w-content mx-auto px-6 sm:px-8">
+  <section id="about" class="py-16 sm:py-24 border-b border-border scroll-mt-16">
+    <div class="max-w-content mx-auto px-5 sm:px-8">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
         <div class="md:col-span-4">
-          <span class="text-[12px] font-semibold uppercase tracking-wider text-ink-faint block mb-2">
-            About the Studio
-          </span>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink">
-            Independent by design.
+          <span class="text-[11px] font-bold uppercase tracking-widest text-ink-faint block mb-3">About the Studio</span>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink leading-tight">
+            Small studio. Focused products.
           </h2>
         </div>
-        <div class="md:col-span-8 space-y-5 text-[15px] sm:text-[16px] text-ink-muted leading-relaxed">
+        <div class="md:col-span-8 space-y-4 text-[15px] sm:text-[16px] text-ink-muted leading-relaxed">
           <p>
-            IndieOrch is a small independent software studio exploring practical ideas at the intersection of productivity, privacy, AI and developer tooling.
+            IndieOrch is a small independent software studio working at the intersection of productivity, privacy, AI and developer tooling.
           </p>
           <p>
-            Rather than relying on VC-driven growth metrics or invasive advertising models, our focus is squarely on crafting reliable, durable products with honest engineering principles.
+            We build focused, durable software for people who value their data. No investor pressure. No growth hacking. No dark patterns. Just products that work.
           </p>
-          <div class="pt-4 flex items-center gap-6 text-[14px]">
+          <div class="pt-3">
             <a
               href="/contact"
-              class="font-medium text-ink hover:text-accent transition-colors inline-flex items-center gap-1.5"
+              class="inline-flex items-center gap-1.5 text-[14px] font-semibold text-ink hover:text-accent transition-colors"
             >
-              <span>Get in touch with the team</span>
-              <span>&rarr;</span>
+              <span>Get in touch</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -267,23 +341,24 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Pre-Footer CTA -->
-  <section class="py-20">
-    <div class="max-w-content mx-auto px-6 sm:px-8">
-      <div class="p-8 sm:p-12 rounded-xl border border-border bg-surface flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+  <section class="py-14 sm:py-20">
+    <div class="max-w-content mx-auto px-5 sm:px-8">
+      <div class="p-7 sm:p-10 rounded-2xl border border-border bg-surface flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div>
-          <h3 class="text-2xl font-bold tracking-tight text-ink mb-2">
-            Have a question or feedback?
-          </h3>
-          <p class="text-[15px] text-ink-muted max-w-xl">
-            Whether you want to explore collaboration, suggest a feature, or need support with any of our tools, we're always accessible.
+          <h3 class="text-xl sm:text-2xl font-bold tracking-tight text-ink mb-2">Questions or feedback?</h3>
+          <p class="text-[14px] sm:text-[15px] text-ink-muted max-w-lg">
+            Product questions, support requests, feature ideas or collaboration inquiries. We read and reply to everything.
           </p>
         </div>
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <a
             href="mailto:support@indieorch.dev"
-            class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-ink text-canvas font-medium text-[14px] hover:bg-neutral-800 transition-colors shadow-sm"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-ink text-canvas font-semibold text-[14px] hover:bg-neutral-800 transition-colors"
           >
-            Email us directly
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            Email us
           </a>
         </div>
       </div>

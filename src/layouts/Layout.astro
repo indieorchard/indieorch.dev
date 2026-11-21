@@ -10,12 +10,66 @@ interface Props {
 }
 
 const {
-  title = 'IndieOrch — Independent software. Privacy by design.',
-  description = 'IndieOrch is an independent software studio building thoughtful tools for everyday work, creativity and technology. Useful products, carefully engineered, with privacy at their core.',
+  title = 'IndieOrch — Privacy-First Software Tools for Creators, Professionals and Developers',
+  description = 'IndieOrch builds privacy-first software for creators, professionals and developers. PII detection, document redaction, browser utilities and application observability tools — all running locally.',
   canonicalPath = '',
 } = Astro.props;
 
 const canonicalUrl = `https://indieorch.dev${canonicalPath}`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://indieorch.dev/#organization",
+      "name": "IndieOrch",
+      "url": "https://indieorch.dev",
+      "logo": "https://indieorch.dev/indieorch-symbol.png",
+      "description": "Independent software studio building privacy-first tools for creators, professionals and developers.",
+      "email": "support@indieorch.dev",
+      "sameAs": [],
+      "foundingDate": "2026",
+      "knowsAbout": [
+        "PII detection",
+        "Document redaction",
+        "Privacy-first software",
+        "Application observability",
+        "Telemetry tools",
+        "Browser utilities",
+        "Local-first computing"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://indieorch.dev/#website",
+      "url": "https://indieorch.dev",
+      "name": "IndieOrch",
+      "publisher": { "@id": "https://indieorch.dev/#organization" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "PII Shield",
+      "operatingSystem": "Windows",
+      "applicationCategory": "SecurityApplication",
+      "url": "https://apps.microsoft.com/detail/9nm785c34320?hl=en-US&gl=AE",
+      "description": "Detect and redact personally identifiable information from documents before sharing with AI tools. Runs fully offline on Windows.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://indieorch.dev/#organization" },
+      "keywords": ["PII detection", "document redaction", "privacy tool", "offline PII tool", "Windows security"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "NoCapUtils",
+      "applicationCategory": "UtilitiesApplication",
+      "url": "https://nocaputils.com",
+      "description": "Free, privacy-first browser utilities for creators and professionals. All data processing happens locally in your browser.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@id": "https://indieorch.dev/#organization" },
+      "keywords": ["browser utilities", "privacy tools", "free tools", "local processing", "creator tools"]
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -25,21 +79,27 @@ const canonicalUrl = `https://indieorch.dev${canonicalPath}`;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="keywords" content="PII detection, PII tools, privacy-first software, document redaction, local PII detection, application observability, telemetry tools, privacy telemetry, browser utilities, offline PII tool, indie software, privacy tools for developers, Windows PII tool" />
+    <meta name="author" content="IndieOrch" />
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonicalUrl} />
 
-    <!-- Favicon & Touch Icons -->
+    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-    <!-- Open Graph / Meta -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content="IndieOrch" />
     <meta property="og:image" content="https://indieorch.dev/indieorch-logo.png" />
+    <meta property="og:image:width" content="304" />
+    <meta property="og:image:height" content="317" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -47,15 +107,18 @@ const canonicalUrl = `https://indieorch.dev${canonicalPath}`;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="https://indieorch.dev/indieorch-logo.png" />
 
-    <!-- Typography: Inter font -->
+    <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
   </head>
-  <body class="min-h-screen bg-canvas text-ink font-sans flex flex-col selection:bg-ink selection:text-canvas">
+  <body class="min-h-screen bg-canvas text-ink font-sans flex flex-col antialiased">
     <Header />
     <main class="flex-grow">
       <slot />
