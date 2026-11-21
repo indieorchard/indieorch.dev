@@ -1,0 +1,30 @@
+{
+  "name": "indieorch.dev",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "IndieOrch — Independent software. Privacy by design.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indieorchard/indieorch.dev.git"
+  },
+  "keywords": [
+    "indieorch",
+    "privacy-first",
+    "software-studio",
+    "developer-tools",
+    "utilities"
+  ],
+  "author": "IndieOrch",
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "astro": "^7.4.13",
+    "tailwindcss": "^3.4.19"
+  }
+}

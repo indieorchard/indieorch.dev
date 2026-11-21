@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Contact — IndieOrch"
+  description="Whether you have a question about one of our products, need technical support, or want to explore collaboration, get in touch with IndieOrch."
+  canonicalPath="/contact"
+>
+  <div class="py-20 sm:py-28">
+    <div class="max-w-content mx-auto px-6 sm:px-8">
+      <div class="max-w-2xl">
+        <!-- Breadcrumb / Section label -->
+        <div class="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-wider text-ink-faint mb-6">
+          <a href="/" class="hover:text-ink transition-colors">Home</a>
+          <span>/</span>
+          <span class="text-ink">Contact</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-3xl sm:text-5xl font-bold tracking-tightest text-ink mb-6">
+          Have a question? Let's talk.
+        </h1>
+
+        <!-- Supporting copy -->
+        <p class="text-base sm:text-lg text-ink-muted leading-relaxed mb-10">
+          Whether you have a question about one of our products, need technical support, want to share feedback or explore a collaboration, we'd love to hear from you.
+        </p>
+
+        <!-- Main Contact Box -->
+        <div class="p-8 sm:p-10 rounded-xl border border-border bg-surface mb-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pb-8 border-b border-border/80">
+            <div>
+              <span class="text-[12px] font-semibold uppercase tracking-wider text-ink-faint block mb-1">
+                Primary Channel
+              </span>
+              <a
+                href="mailto:support@indieorch.dev"
+                class="text-xl sm:text-2xl font-mono font-medium text-ink hover:text-accent transition-colors"
+              >
+                support@indieorch.dev
+              </a>
+            </div>
+            <a
+              href="mailto:support@indieorch.dev"
+              class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-ink text-canvas font-medium text-[14px] hover:bg-neutral-800 transition-colors shadow-sm self-start sm:self-auto"
+            >
+              Email us
+            </a>
+          </div>
+
+          <!-- Note -->
+          <div class="pt-6">
+            <p class="text-[13px] text-ink-muted leading-relaxed">
+              We typically respond to genuine product enquiries and support requests as soon as possible.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Subject Routing Guide -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+          <div class="p-4 rounded-lg border border-border bg-surface-subtle/50 text-[13px]">
+            <span class="font-semibold text-ink block mb-1">Product Support</span>
+            <p class="text-ink-muted">Issues with NoCapUtils or PII Shield installation.</p>
+          </div>
+          <div class="p-4 rounded-lg border border-border bg-surface-subtle/50 text-[13px]">
+            <span class="font-semibold text-ink block mb-1">Early Access</span>
+            <p class="text-ink-muted">Inquiries for upcoming Observability tools.</p>
+          </div>
+          <div class="p-4 rounded-lg border border-border bg-surface-subtle/50 text-[13px]">
+            <span class="font-semibold text-ink block mb-1">Partnerships</span>
+            <p class="text-ink-muted">Collaborations, tooling integration or press.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
