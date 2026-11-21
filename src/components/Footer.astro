@@ -7,15 +7,14 @@ const currentYear = 2026;
     <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-16">
       <!-- Col 1: Wordmark & Tagline -->
       <div class="md:col-span-2 space-y-4">
-        <a href="/" class="flex items-center gap-2.5">
-          <div class="w-5 h-5 rounded bg-ink flex items-center justify-center p-0.5">
-            <svg viewBox="0 0 32 32" fill="none" class="w-full h-full">
-              <circle cx="11" cy="11" r="3.5" fill="#FAFAF8"/>
-              <circle cx="21" cy="11" r="3.5" fill="#FAFAF8"/>
-              <circle cx="16" cy="21" r="3.5" fill="#FAFAF8"/>
-              <path d="M11 11L16 21L21 11" stroke="#FAFAF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
+        <a href="/" class="flex items-center gap-2.5 group">
+          <img
+            src="/indieorch-symbol.png"
+            alt="IndieOrchard logo mark"
+            class="w-6 h-6 object-contain"
+            width="24"
+            height="24"
+          />
           <span class="font-semibold text-[15px] tracking-tight text-ink">IndieOrch</span>
         </a>
         <p class="text-ink-muted text-[14px] leading-relaxed max-w-sm">

@@ -27,8 +27,11 @@ const canonicalUrl = `https://indieorch.dev${canonicalPath}`;
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
 
-    <!-- Favicon -->
+    <!-- Favicon & Touch Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
     <!-- Open Graph / Meta -->
     <meta property="og:type" content="website" />
@@ -36,11 +39,13 @@ const canonicalUrl = `https://indieorch.dev${canonicalPath}`;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content="IndieOrch" />
+    <meta property="og:image" content="https://indieorch.dev/indieorch-logo.png" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://indieorch.dev/indieorch-logo.png" />
 
     <!-- Typography: Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
